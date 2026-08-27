@@ -1,61 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpireX Foundation</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<!-- ================= NAVBAR ================= -->
+    <!-- ================= NAVBAR ================= -->
     <header class="navbar">
         <div class="logo">
-            SpireX Foundation
+            <a href="#home">
+                <img src="logo.png" alt="SpireX Foundation Logo" class="logo-img">
+            </a>
         </div>
-        <nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-menu" id="navMenu">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#internship">Internship</a>
             <a href="#programs">Programs</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
+            <a href="#internship" class="btn primary-btn nav-btn">Join Now</a>
         </nav>
     </header>
-    <!-- ================= HOME ================= -->
-    <section id="home">
-        <!-- Member 2 will work here -->
+
+    <!-- ================= HOME - MEMBER 2 ================= -->
+    <section id="home" class="home-section">
+        <!-- HERO SECTION -->
+        <div class="hero">
+            <div class="hero-content">
+                <p class="hero-small">✦ Unlock Your Potential</p>
+                <h1>Learn <span>•</span> Build <span>•</span> Rise</h1>
+                <p class="hero-text">
+                    SpireX Foundation is a premium student skill development platform designed for the modern tech era.
+                    Master the stack, build the future.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#programs" class="btn primary-btn">Explore Programs &rarr;</a>
+                    <a href="#about" class="btn secondary-btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="card-top">SpireX Foundation</div>
+                <h2>Build skills.<br>Build projects.</h2>
+                <p>Learn cutting-edge technologies and gain practical experience.</p>
+                <div class="mini-line"></div>
+                <p class="card-note">Student Skill Development</p>
+            </div>
+        </div>
+
+        <!-- STATS SECTION -->
+        <div class="stats">
+            <div class="stat-box">
+                <h3>0+</h3>
+                <p>Students Trained</p>
+            </div>
+            <div class="stat-box">
+                <h3>0+</h3>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat-box">
+                <h3>0+</h3>
+                <p>Workshops Held</p>
+            </div>
+            <div class="stat-box">
+                <h3>0+</h3>
+                <p>Community</p>
+            </div>
+        </div>
+
+        <!-- WHY CHOOSE SPIREX SECTION -->
+        <div class="why-section">
+            <div class="section-heading">
+                <p class="hero-small">What We Offer</p>
+                <h2>Why Choose SpireX?</h2>
+                <p>
+                    We provide more than just a certificate. We provide a bridge from classroom theory to industry
+                    reality.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Project-Based Learning</h3>
+                    <p>Go beyond theory. Build real-world applications that solve actual problems.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Real-Time Experience</h3>
+                    <p>Work in a fast-paced startup environment and understand professional workflows.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Expert Mentorship</h3>
+                    <p>Get guidance from senior developers and industry veterans.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Career Development</h3>
+                    <p>Resume reviews, portfolio building, and job interview preparation.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA SECTION -->
+        <div class="cta-section">
+            <h2>Ready to Start Your Journey?</h2>
+            <p>
+                Join thousands of students who have leveled up their skills with SpireX Foundation. Our next cohort
+                starts soon!
+            </p>
+            <div class="hero-buttons">
+                <a href="#internship" class="btn primary-btn">Apply for Internship &rarr;</a>
+                <a href="#contact" class="btn secondary-btn">Contact Us</a>
+            </div>
+        </div>
     </section>
 
-    <!-- ================= ABOUT ================= -->
-    <section id="about">
-        <!-- Member 3 will work here -->
-    </section>
-    
-    <!-- ================= INTERNSHIP ================= -->
-     <section id="internship">
-         <!-- Member 4 will work here -->
-    </section>
-    
-    <!-- ================= PROGRAMS ================= -->
-     <section id="programs">
-        <!-- Member 5 will work here -->
-    </section>
-    
-    <!-- ================= PROJECTS ================= -->
-    <section id="projects">
-        <!-- Member 5 will work here -->
-    </section>
-    <!-- ================= CONTACT ================= -->
-     <section id="contact">
-        <!-- Contact section -->
-    </section>
     <!-- ================= FOOTER ================= -->
-     <footer>
-        <p>
-            © 2026 SpireX Foundation
-        </p>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col footer-about">
+                <h3 class="footer-logo">SpireX</h3>
+                <p>Empowering students to learn cutting-edge technologies, build real-world projects, and rise in their
+                    professional careers.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">Who We Are</a></li>
+                    <li><a href="#internship">Internships</a></li>
+                    <li><a href="#about">Our Team</a></li>
+                    <li><a href="#contact">Get in Touch</a></li>
+                    <li><a href="#">Verify Certificate</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Programs</h4>
+                <ul>
+                    <li><a href="#programs">Front-End Development</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SpireX Foundation. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
     </footer>
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
