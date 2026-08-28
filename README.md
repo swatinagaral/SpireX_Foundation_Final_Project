@@ -18,4 +18,4 @@ A responsive internship section displaying program cohorts, schedule details, ke
 4. Hover the process steps and cohort cards to see the interactive states.
 5. Use the Skill-Path Architect form and click "Generate Custom Roadmap" to test it.
  ##  Technologies
-HTML5, CSS3 and JavaScript.
+HTML5, CSS3 and JavaScript.Program developer 
