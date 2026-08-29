@@ -1,0 +1,103 @@
+<div className="m5-container m5-program-grid">
+      {programs.map(({ title, category, icon: Icon, text }) => (
+        <article className="m5-program-card" key={title}>
+          <Icon aria-hidden="true" />
+          <span>{category}</span>
+          <h3>{title}</h3>
+          <p>{text}</p>
+          <button type="button" onClick={handleAction}>
+            Learn more <ArrowRight size={15} />
+          </button>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  {/* SERVICES */}
+  <section id="services" className="m5-section m5-tinted">
+    <div className="m5-container m5-section-head">
+      <div>
+        <div className="m5-section-kicker">Services</div>
+        <h2>
+          Support that <span>moves ideas forward.</span>
+        </h2>
+      </div>
+      <p>
+        Practical support for learners, teams and community initiatives.
+      </p>
+    </div>
+
+    <div className="m5-container m5-service-grid">
+      {services.map(({ title, icon: Icon, text }) => (
+        <article className="m5-service-card" key={title}>
+          <div className="m5-service-icon">
+            <Icon aria-hidden="true" />
+          </div>
+          <div>
+            <h3>{title}</h3>
+            <p>{text}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  {/* PROJECTS */}
+  <section id="projects" className="m5-section">
+    <div className="m5-container m5-section-head m5-project-head">
+      <div>
+        <div className="m5-section-kicker">Projects</div>
+        <h2>
+          From concepts to <span>real builds.</span>
+        </h2>
+      </div>
+      <p>
+        A showcase of project concepts and portfolio-ready work across
+        technology, education, career and community.
+      </p>
+    </div>
+
+    <div
+      className="m5-container m5-filters"
+      aria-label="Project categories"
+    >
+      {categories.map((category) => (
+        <button
+          type="button"
+          key={category}
+          className={filter === category ? "active" : ""}
+          onClick={() => setFilter(category)}
+          aria-pressed={filter === category}
+        >
+          {category}
+        </button>
+      ))}
+    </div>
+
+    <div className="m5-container m5-project-grid">
+      {filteredProjects.map((project) => (
+        <article className="m5-project-card" key={project.title}>
+          <div className="m5-project-visual">
+            <Code2 aria-hidden="true" />
+            <span>{project.category}</span>
+          </div>
+
+          <div className="m5-project-body">
+            <h3>{project.title}</h3>
+            <p>{project.text}</p>
+
+            <div className="m5-tags" aria-label="Technologies">
+              {project.tech.map((technology) => (
+                <span key={technology}>{technology}</span>
+              ))}
+            </div>
+
+            <button type="button" onClick={handleAction}>
+              Discuss project <ExternalLink size={15} />
+            </button>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</>
